@@ -23,10 +23,11 @@ This project is intentionally designed as **Servoless (Fixed Sensor)** so that b
 
 ---
 
-## ⚡ Advanced Features
+## ⚡ Advanced Engineering Features
+* **Dual-Screen Synchronization & Redundancy Principle:** Telemetry data is streamed simultaneously to both the 60Hz software HUD interface on the PC and the physical 16x2 LCD display. This architecture follows the industrial **Redundancy Principle**—if the software interface freezes or the PC crashes, the hardware display ensures continuous, uninterrupted monitoring.
+* **Stand-Alone Functionality:** Thanks to the integrated 16x2 I2C LCD screen, the hardware stack is fully capable of running **stand-alone**. When disconnected from the PC and powered by an external battery, the system operates independently as a fully functional distance monitor.
 * **Real-Time Spectrum Histogram:** The graphical panel on the bottom right logs the distance history of the last 60 frames, acting like a wave frequency analyzer to show movement trends.
 * **Digital Signal Filter:** Includes an anti-interference smoothing filter algorithm that eliminates signal spikes and erratic sensor readings (e.g., sudden 0 or 400 cm glitches).
-* **Dual-Screen Synchronization:** Telemetry data is streamed simultaneously to both the 60Hz siber HUD interface on the PC and the physical 16x2 LCD display at a high-speed rate of **115200 Baud**.
 * **Acrylic Nano-Insulation Technology:** To eliminate the risk of short circuits caused by sharp solder joints touching the breadboard's internal metal rails, the back of the Arduino Uno is fully shielded using thick transparent acrylic mounting tape (nano-tape).
 
 ---
